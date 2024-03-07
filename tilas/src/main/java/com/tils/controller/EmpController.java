@@ -34,7 +34,7 @@ public class EmpController {
         PageBean pageBeanList = (PageBean) empService.page(page, pageSize, name, gender, begin, end);
         return Result.success(pageBeanList);
     }
-
+    @Log
     @DeleteMapping("/{ids}")
     public Result queryList(@PathVariable Integer ids[]) {
         empService.queryByIds(ids);
@@ -44,6 +44,7 @@ public class EmpController {
     /**
      * 添加员工
      */
+    @Log
     @PostMapping
     public Result addEmp(@RequestBody Emp emp) {
         empService.add(emp);
@@ -62,6 +63,7 @@ public class EmpController {
     /**
      * 修改员工数据
      */
+    @Log
     @PutMapping
     public Result update(@RequestBody Emp emp) {
         empService.update(emp);
