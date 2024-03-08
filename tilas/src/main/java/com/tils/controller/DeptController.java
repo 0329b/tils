@@ -1,5 +1,6 @@
 package com.tils.controller;
 
+import com.tils.anno.Log;
 import com.tils.pojo.Dept;
 import com.tils.pojo.Result;
 import com.tils.service.DeptService;
@@ -30,6 +31,7 @@ public class DeptController {
     /**
      * 删除部门
      */
+    @Log
     @DeleteMapping("/{id}")
     public Result deleteById(@PathVariable Integer id) {
         deptService.deleteById(id);
@@ -45,6 +47,7 @@ public class DeptController {
     /**
      * 增加部门
      */
+    @Log
     @PostMapping
     public Result add(@RequestBody Dept dept){
         //调用service层方法
@@ -54,6 +57,7 @@ public class DeptController {
     /**
      * 部门名称修改
      */
+    @Log
     @PutMapping
     public Result updataDept(@RequestBody Dept dept){
         log.info("修改功能");
