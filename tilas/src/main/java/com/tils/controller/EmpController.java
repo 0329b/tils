@@ -6,14 +6,11 @@ import com.tils.pojo.PageBean;
 import com.tils.pojo.Result;
 import com.tils.service.EmpService;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.ibatis.annotations.Delete;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.*;
 
-import java.lang.reflect.Array;
 import java.time.LocalDate;
-import java.util.List;
 
 
 @RestController
