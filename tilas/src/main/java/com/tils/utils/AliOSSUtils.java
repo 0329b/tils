@@ -21,10 +21,10 @@ public class AliOSSUtils {
     // Endpoint以华东1（杭州）为例，其它Region请按实际情况填写。
     //方法1
 //    String endpoint = "https://oss-cn-hangzhou.aliyuncs.com";
-//    String accessKeyId = "LTAI5t7YQxAheN9fX98kTLjb";
-//    String accessKeySecret = "24gxhS1VCsJgbH9D6wdmMoVOqK9Qtj";
+//    String accessKeyId = "";
+//    String accessKeySecret = "";
 //    // 填写Bucket名称，例如examplebucket。
-//    String bucketName = "web-tilasw";
+//    String bucketName = "";
     //配置文件形式
 //    @Value("${aliyun.oss.endpoint}")
 //    private String endpoint;
