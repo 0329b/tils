@@ -22,9 +22,9 @@ mybatis:
 aliyun:
   oss:
     endpoint: https://oss-cn-hangzhou.aliyuncs.com
-    accessKeyId: LTAI5t7YQxAheN9fX98kTLjb
-    accessKeySecret: 24gxhS1VCsJgbH9D6wdmMoVOqK9Qtj
-    bucketName: web-tilasw
+    accessKeyId: 
+    accessKeySecret: 
+    bucketName:
 logging:
   level:
     org.springframework.jdbc.support.JdbcTransactionManager: debug
